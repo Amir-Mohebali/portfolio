@@ -43,6 +43,7 @@ const Header = () => {
                         />
                     </label>
                     <a href="" className="button">
+                        <div className="hover"></div>
                         Hire Me
                     </a>
                 </li>
