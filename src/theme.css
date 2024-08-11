@@ -108,6 +108,8 @@ a:hover {
 
 /* Button Styles */
 .button {
+	border: none;
+	outline: none;
 	background-color: transparent;
 	color: var(--text-color);
 	position: relative;

@@ -19,6 +19,7 @@ import Project03 from '../assets/project-03.png';
 import Project04 from '../assets/project-04.png';
 import Project05 from '../assets/project-05.png';
 import Project06 from '../assets/project-06.png';
+import Contact from '../components/contact/Contact'
 
 
 const Home = () => {
@@ -192,6 +193,11 @@ const Home = () => {
                         <a href='' className='portfolio__card-title'>Portfolio 6</a>
                     </div>
                 </div> */}
+            </section>
+
+            <section className='contact' id='contact'>
+                <h2 className='main-title'>Contact Me</h2>
+                <Contact />
             </section>
         </div>
     )
