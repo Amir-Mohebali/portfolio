@@ -9,6 +9,7 @@
 	--primary-font-family: 'Poppins', sans-serif;
 	--secondary-font-family: 'Cormorant Garamond', serif;
 	--nav-bg: #f8f9fa;
+	--drop-nav-bg: #ebebeb;
 	--special-text: #000;
 	--gradient-color: linear-gradient(90deg, #48c6ef, #005aa7);
 	--box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
@@ -22,6 +23,7 @@
 	--background-color: #2a2c39;
 	--text-color: #858792;
 	--nav-bg: #252734;
+	--drop-nav-bg: #1a1a1a;
 	--special-text: #fff;
 	--gradient-color: linear-gradient(90deg, #7a1fa2, #eb3f7a);
 	--box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
@@ -193,7 +195,7 @@ a:hover {
 	}
 
 	h3 {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
 	h4 {

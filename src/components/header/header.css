@@ -80,9 +80,15 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--text-color);
     margin: 5px 0;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav .wrapper {
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -111,7 +117,7 @@
         top: 75px;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: var(--drop-nav-bg);
         margin-top: 10px;
     }
     .menu-item {
@@ -121,5 +127,11 @@
     }
     .mobile-menu {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav .wrapper {
+        padding: 0 20px;
     }
 }

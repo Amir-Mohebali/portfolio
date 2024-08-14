@@ -231,7 +231,7 @@
 
 .card {
 	display: flex;
-    gap: 50px;
+    gap: 40px;
     height: 550px;
 }
 
@@ -248,13 +248,13 @@
 
 .card-title {
 	color: var(--special-text);
-    font-size: 22px;
     font-weight: bolder;
+    font-size: 22px;
     text-indent: 25px;
     width: 100%;
     border-radius: 15px;
     padding: 20px 0px;
-    transition: all 0.5s ease;
+    transition: background-color 0.5s ease;
 	/* background: linear-gradient(90deg, #7a1fa2, #eb3f7a);
     -webkit-background-clip: text;
 	background-clip: text;
@@ -379,67 +379,48 @@
 		transform: translate(-10%, -10px);
 	}
 
-	.social-links a:nth-child(1) {
-		left: 360px;
-		top: 50px;
-	}
-	.social-links a:nth-child(2) {
-		left: 445px;
-		top: 140px;
-	}
-	.social-links a:nth-child(3) {
-		left: 469px;
-		top: 265px;
-	}
-	.social-links a:nth-child(4) {
-		left: 418px;
-		top: 390px;
-	}
-
-	.cards {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.skill {
-		flex-direction: column;
-	}
-
-	.skill__left,
-	.skill__right {
-		width: 100%;
-	}
-
-	.skill__right {
-		margin-top: 60px;
-	}
-
 	.item-list {
 		gap: 40px;
 	}
 
-	.portfolio__grid {
-		grid-template-columns: repeat(2, 1fr);
+	.card-images {
+		display: none;
+	}
+
+	.card {
+		height: auto;
+	}
+
+	.card-list {
+		flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+        background: none;
+        box-shadow: none;
+        padding: 20px;
+	}
+
+	.card-title {
+		width: 140px;
+		text-indent: 0px;
+		text-align: center;
+    	padding: 20px 30px;
+    	border-radius: 15px;
+    	box-shadow: var(--box-shadow);
+    	background-color: var(--background-color);
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.skill .main-title {
-		font-size: 48px;
-	}
-
-	.cards {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	.hero-section__special-text {
+	.hero-section .left .special-text {
 		font-size: 52px;
 	}
 
-	.section__title {
-		font-size: 42px;
-	}
-	.portfolio__grid {
-		grid-template-columns: repeat(1, 1fr);
+	.skill .main-title, 
+	.courses .main-title,
+	.contact .main-title {
+		font-size: 48px;
 	}
 }
 
@@ -453,30 +434,16 @@
 }
 
 @media screen and (max-width: 500px) {
-	.home {
-		padding: 100px 20px 50px 20px;
-	}
-
-	.hero-section__special-text {
+	.hero-section .left .special-text {
 		font-size: 42px;
 	}
 
-	.hero-section__image-half-round-shape {
-		left: 45%;
+	.skill .main-title, 
+	.courses .main-title,
+	.contact .main-title {
+		font-size: 36px;
 	}
 
-	.social-links a:nth-child(1) {
-		left: 313px;
-	}
-	.social-links a:nth-child(2) {
-		left: 387px;
-	}
-	.social-links a:nth-child(3) {
-		left: 414px;
-	}
-	.social-links a:nth-child(4) {
-		left: 364px;
-	}
 	.hamburger-menu {
 		padding: 0 20px;
 	}
