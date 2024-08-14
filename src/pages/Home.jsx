@@ -151,12 +151,54 @@ const Home = () => {
                 </p>
                 <div className="card">    
                     <div className="card-list">
-                        <a href='https://github.com/Amir-Mohebali/simple-table'  className='card-title' onMouseOver={()=>showSideImage('card-image-1')}>Table</a>
-                        <a href='https://github.com/Amir-Mohebali/github-design' className='card-title' onMouseOver={()=>showSideImage('card-image-2')}>Github</a>
-                        <a href='https://github.com/Amir-Mohebali/rose'          className='card-title' onMouseOver={()=>showSideImage('card-image-3')}>Rose</a>
-                        <a href='https://github.com/Amir-Mohebali/card-item'     className='card-title' onMouseOver={()=>showSideImage('card-image-4')}>Card Design</a>
-                        <a href='https://github.com/Amir-Mohebali/to-do-app-and-form-validation' className='card-title' onMouseOver={()=>showSideImage('card-image-5')}>Login Form</a>
-                        <a href='https://github.com/Amir-Mohebali/to-do-app-and-form-validation' className='card-title' onMouseOver={()=>showSideImage('card-image-6')}>to-do app</a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/simple-table'
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-1')} 
+                            target='_blank'
+                        >
+                                Table
+                        </a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/github-design'
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-2')} 
+                            target='_blank'
+                        >
+                                Github
+                        </a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/rose'
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-3')} 
+                            target='_blank'
+                        >
+                                Rose
+                        </a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/card-item'
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-4')} 
+                            target='_blank'
+                        >
+                                Card Design
+                        </a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/to-do-app-and-form-validation' 
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-5')} 
+                            target='_blank'
+                        >
+                            Login Form
+                        </a>
+                        <a 
+                            href='https://github.com/Amir-Mohebali/to-do-app-and-form-validation' 
+                            className='card-title' 
+                            onMouseOver={()=>showSideImage('card-image-6')} 
+                            target='_blank'
+                        >
+                            to-do app
+                        </a>
                     </div>
                     <div className="card-images">
                         <img src={Project01} alt="" id="card-image-1" className='active' />
