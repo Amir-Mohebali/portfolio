@@ -71,7 +71,7 @@ const Home = () => {
             <section className="hero-section" id="home">
                 <div className='left'>
                     <div className="special-text">
-                        Hello! I am <br /> Fallon
+                        Hello! I am <br /> AmirHossein
                     </div>
                     <div className="paragraph">
                         <h3>

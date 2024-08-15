@@ -14,13 +14,10 @@ const Header = () => {
   return (
     <div className={`nav ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <div className="wrapper container">
-            <div className="logo">Fallon Carrington</div>
+            <div className="logo">AmirHossein Mohebali</div>
             <ul className={`menu ${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
                 <li className="menu-item">
                     <a href="#home">Home</a>
-                </li>
-                <li className="menu-item">
-                    <a href="#services">Services</a>
                 </li>
                 <li className="menu-item">
                     <a href="#skills">Skills</a>
