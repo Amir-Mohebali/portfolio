@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Switch from 'react-switch'
+import { IoSunny, IoMoon } from "react-icons/io5";
 import { useTheme } from '../../context/useTheme'
 import './header.css'
 
@@ -28,24 +29,46 @@ const Header = () => {
                 <li className="menu-item">
                     <a href="#contact">Contact</a>
                 </li>
-                <li className="buttons">
-                    <label htmlFor="" className="switch">
+            </ul>
+        </div>
+        <label htmlFor="" className="switch">
                         <Switch 
-                            height={24}
-                            width={48}
+                            uncheckedIcon={
+                                <IoMoon 
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        height: "100%",
+                                        fontSize: "16px",
+                                        color: "#112E59",
+                                        marginLeft: "6px"
+                                    }} 
+                                />
+                            }
+                            checkedIcon={
+                                <IoSunny
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        height: "100%",
+                                        fontSize: "16px",
+                                        color: "#fffe03",
+                                        marginLeft: "4px"
+                                    }} 
+                                />
+                            }
+                            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                            height={25}
+                            width={50}
                             onColor="#4D4D4D"
                             offColor="#ccc"
                             onChange={toggleTheme}
                             checked={isDarkTheme}
                         />
-                    </label>
-                    <a href="" className="button">
-                        <div className="hover"></div>
-                        Hire Me
-                    </a>
-                </li>
-            </ul>
-        </div>
+        </label>
         <div className="hamburger-menu" onClick={toggleMobileMenu}>
             <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
             <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>

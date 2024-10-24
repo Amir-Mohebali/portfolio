@@ -58,17 +58,10 @@
     background-color: var(--special-text);
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .switch {
     position: relative;
     margin-left: 10px;
     margin-right: 20px;
-    top: 5px;
 }
 
 .hamburger-menu {
