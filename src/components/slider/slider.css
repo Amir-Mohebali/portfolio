@@ -1,0 +1,147 @@
+.slider-container {
+    height: 70vh;
+    width: 80%;
+    border-radius: 12px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.slide-image.small, 
+.slide-image.medium {
+  display: none;
+}
+
+.slide-title {
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    padding-block: 40px;
+    z-index: 10;
+}
+
+.slide-title:hover {
+    text-decoration: none;
+}
+
+
+.prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,.slider-container:hover .next {
+  color: black
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+  width: fit-content;
+  height: 30px;
+  position: absolute;
+  display: flex;
+  top: 94%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: 0%; */
+  justify-content: center;
+  z-index: 200;
+}
+  
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider-container:hover .dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .active-dot {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+  
+.slider-container:hover .dot{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider-container:hover .active-dot{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+      width: 95%;
+  }
+  .slide-image.large {
+    display: none;
+  }
+  .slide-image.medium {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide-image.medium {
+    display: none;
+  }
+  .slide-image.small {
+    display: block;
+  }
+  .slide-title {
+    font-size: 36px;
+  }
+}
