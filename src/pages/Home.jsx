@@ -81,7 +81,7 @@ const Home = () => {
                         </h3>
                     </div>
                     {/* eslint-disable-next-line */}
-                    <a href="https://uploadkon.ir/uploads/35b617_24resume.pdf" target="_blank" download="resume.pdf" className="button">
+                    <a href="https://uploadkon.ir/uploads/127518_24resume.pdf" target="_blank" download="resume.pdf" className="button">
                         <div className="hover"></div>
                         Get Resume
                     </a>
